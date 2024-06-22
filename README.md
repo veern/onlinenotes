@@ -12,7 +12,7 @@ This allows to pull the most recent docker image that has a functioning MySQL da
 docker run --name onlinenotes-mysql -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306 mysql
 ```
 Following command does the following:
-- "name" is the name of our docker container that will have our database
+- "--name" is the name of our docker container that will have our database
 - "-e" is setting a password needed for connecting to a database. It is hardcoded into this project, as this is not hosted online as of now.
 - "-d" means that the container is ran in detached mode
 - "-p" sets which port of a container is connected to a port on a host machine
